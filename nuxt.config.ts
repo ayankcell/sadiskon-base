@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      sdsDomain: process.env.NUXT_SDS_DOMAIN || 'https://www.sadiskon.com',
+      sdsDomain: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.sadiskon.com',
     }
   },
   //@ts-ignore
