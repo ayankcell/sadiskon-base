@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "1.0.0-rc.1",
+    "@nuxt/ui": "^2.9.0",
+    "@types/node": "^18.18.4",
+    "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
+    "dayjs-nuxt": "^1.2.7",
+    "nuxt": "^3.7.4",
+    "nuxt-delay-hydration": "^1.2.2",
+    "nuxt-schema-org": "^3.0.1",
+    "nuxt-simple-sitemap": "^3.4.0"
+  },
+  "dependencies": {
+    "@iconify-json/bxl": "^1.1.7",
+    "clipboard": "^2.0.11"
+  }
+}

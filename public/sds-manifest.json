@@ -1,0 +1,31 @@
+{
+    "name": "Sadiskon",
+    "display": "standalone",
+    "start_url": "/?utm_source=pwa_manifest\u0026utm_campaign=pwa_install\u0026utm_medium=pwa",
+    "short_name": "Sadiskon",
+    "theme_color": "#e74f62",
+    "orientation": "portrait",
+    "background_color": "#e74f62",
+    "description": "Belanja Online Tanpa Beban.  Jangan takut belanja online kena ongkir kemahalan!  Cari promo gratis ongkir dari toko favoritmu di Sadiskon! Ambil voucher, kupon, cashback",
+    "features": [
+        "Gratis Ongkir Shopee",
+        "Gratis Ongkir Lazada",
+        "Voucher terbaru toko online pilihan",
+        "Kode promo fashion dan skincare",
+        "Promo terbukti, divalidasi oleh user"
+    ],
+    "icons": [
+        {
+            "src": "/img/pwa/sadiskon-icon-pwa-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/pwa/sadiskon-icon-pwa-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    
+    "categories":["Shopping","Beauty"]
+}

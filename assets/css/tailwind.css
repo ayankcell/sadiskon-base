@@ -1,0 +1,74 @@
+/* /assets/css/tailwind.css */
+/** 
+* @ts-ignore
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply text-lg space-y-2;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-sans font-semibold;
+    }
+
+    p {
+        @apply my-2;
+    }
+
+    ul,
+    ol {
+        @apply px-4
+    }
+
+    ul li {
+        @apply list-decimal;
+    }
+
+    ol li {
+        @apply list-disc ml-4;
+    }
+
+    article {
+        div{@apply my-3}
+        h2,h3,h4,h5{@apply py-2}
+        h2 {
+            @apply text-2xl;
+        }
+
+        h3 {
+            @apply text-xl
+        }
+
+        h4 {
+            @apply text-lg
+        }
+
+        a{
+            @apply text-sky-600 hover:text-sky-400 hover:underline transition-colors;
+        }
+
+        table{
+            tr:nth-child(even){
+                @apply bg-gray-200;
+            }
+        }
+        #rank-math-toc {
+            @apply p-5 bg-gray-100 rounded-md shadow-md;
+
+            a {
+                @apply text-gray-800 hover:text-gray-500;
+            }
+        }
+
+    }
+}
