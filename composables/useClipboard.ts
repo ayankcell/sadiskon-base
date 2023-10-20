@@ -1,7 +1,8 @@
 /**
  * @credit: https://jamiecurnow.medium.com/how-to-copy-to-clipboard-in-vue-3-85feb3d9e5d6
  */
-import * as Clipboard from 'clipboard'
+import * as clipboard from 'clipboard'
+const Clipboard = clipboard
 
 interface Options {
     /** Fixes IE by appending element to body */
@@ -16,7 +17,7 @@ export default (opts?: Options) => {
                 // make fake element
                 const fakeEl = document.createElement('button')
                 // setup a new Clipboard.js
-                const clipboard = new Clipboard(fakeEl, {
+                const clipboard = new Clipboard.default(fakeEl, {
                     text: () => text,
                     action: () => 'copy',
                     container: container !== undefined ? container : document.body
