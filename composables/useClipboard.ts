@@ -1,8 +1,7 @@
-// composables/useClipboard.ts
 /**
  * @credit: https://jamiecurnow.medium.com/how-to-copy-to-clipboard-in-vue-3-85feb3d9e5d6
  */
-import Clipboard from 'clipboard'
+import * as Clipboard from 'clipboard'
 interface Options {
     /** Fixes IE by appending element to body */
     appendToBody: boolean
