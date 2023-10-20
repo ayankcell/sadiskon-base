@@ -8,6 +8,7 @@
         <!-- navigasi balik satu path ke atasnya -->
         <navGoUpper />
         <slot />
+        <Footer/>
       </UContainer>
     </div>
   </template>

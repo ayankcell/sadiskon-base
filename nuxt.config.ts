@@ -1,5 +1,7 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from "url"
+import { dirname, join } from "path"
 
+const currentDir = dirname(fileURLToPath(import.meta.url))
 export default defineNuxtConfig({
   //@ts-ignore
   site: {
@@ -8,6 +10,9 @@ export default defineNuxtConfig({
     trailingSlash: true,
     defaultLocale: 'id_ID.utf8'
   },
+  css:[
+    join(currentDir, './assets/css/tailwind.css')
+  ],
   app: {
     head: {
       htmlAttrs: {
@@ -16,8 +21,8 @@ export default defineNuxtConfig({
       link: [
         { rel: "manifest", href: "/sds-manifest.json" }
       ],
-      script:[
-        {type:'application/ld+json', innerHTML:`{"@context": "https://schema.org","@type": "Organization","url": "https://www.sadiskon.com","logo": "https://www.sadiskon.com/img/pwa/sadiskon-icon-pwa-512.png"}`}
+      script: [
+        { type: 'application/ld+json', innerHTML: `{"@context": "https://schema.org","@type": "Organization","url": "https://www.sadiskon.com","logo": "https://www.sadiskon.com/img/pwa/sadiskon-icon-pwa-512.png"}` }
       ],
       style: [
         {
@@ -42,8 +47,8 @@ export default defineNuxtConfig({
     'nuxt-delay-hydration',
     '@zadigetvoltaire/nuxt-gtm',
   ],
-  ui:{
-    icons:['heroicons','bxl']
+  ui: {
+    icons: ['heroicons', 'bxl']
   },
   sitemap: {
     sitemaps: true,
@@ -68,7 +73,7 @@ export default defineNuxtConfig({
     providers: {
       customProvider: {
         name: 'photon',
-        provider: '~/providers/photon'
+        provider: join(currentDir, './providers/photon')
       }
     }
   },
