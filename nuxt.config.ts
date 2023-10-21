@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   css:[
     join(currentDir, './assets/css/tailwind.css')
   ],
+  
   app: {
     head: {
       htmlAttrs: {
@@ -73,6 +74,9 @@ export default defineNuxtConfig({
     providers: {
       customProvider: {
         name: 'photon',
+        options:{
+          baseDomain:'sadiskon.com',
+        },
         provider: join(currentDir, './providers/photon')
       }
     }

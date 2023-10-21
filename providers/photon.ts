@@ -6,7 +6,7 @@ export function getImage(src, { modifiers, baseURL } = {}, { options, $img }) {
   const { width, height, fit, quality, ...providerModifiers } = modifiers
   /** kalau local file, maka tambahkan hostname dari website ini */
   if (parseURL(src).host === undefined) {
-    src = joinURL('sadiskon.com', src)
+    src = joinURL( options.providers.photon.defaults.baseDomain, src)
   } else {
     /** hapus  protocolnya */
     src = withoutProtocol(src)
