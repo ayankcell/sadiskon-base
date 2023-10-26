@@ -26,7 +26,7 @@ const menus = [
   { label: 'Home', icon: 'i-heroicons-home', to: '/' },
   { label: 'Toko', icon: 'i-heroicons-building-storefront', to: '/semua-brand/' },
   { label: 'Cari', icon: 'i-heroicons-magnifying-glass', to: '/cari/' },
-  { label: 'Gratis Ongkir', icon: 'i-heroicons-truck', to: '/l/gratis-ongkir/' },
+  { label: 'Gajian', icon: 'i-heroicons-wallet', to: '/l/gajian/' },
   { label: 'Menu', icon: 'i-heroicons-list-bullet', action: ()=>{ menuIsOpen.value=!menuIsOpen.value}},
 ]
 const { menuIsOpen } = useMenuSlide()
