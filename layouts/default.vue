@@ -5,6 +5,7 @@
       base: 'bg-gray-100 mx-auto shadow-2xl',
       padding: 'px-0 sm:px-0 lg:px-0',
     }">
+    <BannerAtas/>
       <slot />
       <Footer/>
       <!-- buttom navigation on root path -->
@@ -24,9 +25,9 @@
 <script setup>
 const menus = [
   { label: 'Home', icon: 'i-heroicons-home', to: '/' },
+  { label: 'Gajian', icon: 'i-heroicons-wallet', to: '/l/gajian/' },
   { label: 'Toko', icon: 'i-heroicons-building-storefront', to: '/semua-brand/' },
   { label: 'Cari', icon: 'i-heroicons-magnifying-glass', to: '/cari/' },
-  { label: 'Gajian', icon: 'i-heroicons-wallet', to: '/l/gajian/' },
   { label: 'Menu', icon: 'i-heroicons-list-bullet', action: ()=>{ menuIsOpen.value=!menuIsOpen.value}},
 ]
 const { menuIsOpen } = useMenuSlide()

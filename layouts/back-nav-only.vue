@@ -7,6 +7,7 @@
       }">
         <!-- navigasi balik satu path ke atasnya -->
         <navGoUpper />
+        <BannerAtas/>
         <slot />
         <Footer/>
       </UContainer>
