@@ -30,7 +30,7 @@ useSeoMeta({
             <p class="text-center px-2">
                 Tenang, masih ada banyak promo lainnya kok!
             </p>
-            {{error}}
+            <UAlert :description="`Error ${error?.statusCode}`" color="yellow"/>
             <UButton color="gray" size="xl" :ui="{ rounded: 'rounded-full' }" icon="i-heroicons-arrow-left-20-solid"
                 @click.exact="handleError">Balik ke Sadiskon</UButton>
 
