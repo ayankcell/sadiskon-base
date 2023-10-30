@@ -7,7 +7,7 @@ const handleError = () => clearError({ redirect: '/' })
 
 const errorTitle: Object = {
     //@ts-ignore
-    404: `Waduh! Halaman gak ditemukan: ${props.error.url} | Sadiskon`,
+    404: `Waduh! Halaman gak ditemukan | Sadiskon`,
     500: 'Duh maaf ya! Lagi ada gangguan di server Sadikon'
 }
 
@@ -30,7 +30,7 @@ useSeoMeta({
             <p class="text-center px-2">
                 Tenang, masih ada banyak promo lainnya kok!
             </p>
-
+            {{error}}
             <UButton color="gray" size="xl" :ui="{ rounded: 'rounded-full' }" icon="i-heroicons-arrow-left-20-solid"
                 @click.exact="handleError">Balik ke Sadiskon</UButton>
 
