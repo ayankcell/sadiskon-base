@@ -7,7 +7,7 @@ const handleError = () => clearError({ redirect: '/' })
 
 const errorTitle: Object = {
     //@ts-ignore
-    404: `Waduh! Halaman gak ditemukan | Sadiskon`,
+    404: `Waduh! Halaman gak ditemukan: | Sadiskon`,
     500: 'Duh maaf ya! Lagi ada gangguan di server Sadikon'
 }
 
