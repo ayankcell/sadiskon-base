@@ -57,12 +57,6 @@
     </UCard>
 </USlideover></template>
 <script setup>
-const { menuIsOpen } = useMenuSlide()
-const links = [
-    { label: 'Home', to: '/' },
-    { label: 'Semua Toko', to: '/semua-brand/' },
-    { label: 'Kategori Promo', to: '/semua-kategori/' },
-    { label: 'Gabung Komunitas', to: '/biolink/' },
-    { label: 'Tentang Sadiskon', to: '/p/tentang-sadiskon/' }
-]
+const { menuIsOpen, menuLinks } = useMenuSlide()
+const links = menuLinks
 </script>
