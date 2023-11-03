@@ -23,12 +23,6 @@
 </template>
 
 <script setup>
-const menus = [
-  { label: 'Home', icon: 'i-heroicons-home', to: '/' },
-  { label: '11.11', icon: 'i-heroicons-fire', to: '/l/11-11/', animation: 'animate-bounce'},
-  { label: 'Toko', icon: 'i-heroicons-building-storefront', to: '/semua-brand/' },
-  { label: 'Cari', icon: 'i-heroicons-magnifying-glass', to: '/cari/' },
-  { label: 'Menu', icon: 'i-heroicons-list-bullet', action: ()=>{ menuIsOpen.value=!menuIsOpen.value}},
-]
-const { menuIsOpen } = useMenuSlide()
+const { menuFooter } = useSds()
+const menus = menuFooter
 </script>
