@@ -25,7 +25,6 @@ useSeoMeta({
     title: errorTitle[props.error?.statusCode]
 });
 </script>
-
 <template >
     <NuxtLayout name="error">
         <div class="min-h-screen w-full flex flex-col justify-center items-center space-y-5">

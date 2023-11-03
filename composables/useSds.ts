@@ -48,7 +48,7 @@ const menuFooter = [
     { label: 'Home', icon: 'i-heroicons-home', to: '/' },
     { label: '11.11', icon: 'i-heroicons-fire', to: '/l/11-11/', animation: 'animate-bounce' },
     { label: 'Toko', icon: 'i-heroicons-building-storefront', to: '/semua-brand/' },
-    {label: 'Artikel', icon: 'i-heroicons-newspaper', to:'/blog/'},
+    {label: 'Artikel', icon: 'i-heroicons-newspaper', to:'https://www.sadiskon.com/blog/'},
     { label: 'Cari', icon: 'i-heroicons-magnifying-glass', to: '/cari/' },
     { label: 'Menu', icon: 'i-heroicons-list-bullet', action: () => { menuIsOpen.value = !menuIsOpen.value } },
 ]
