@@ -6,10 +6,13 @@
         padding: 'px-0 sm:px-0 lg:px-0',
       }">
         <!-- navigasi balik satu path ke atasnya -->
-        <navGoUpper />
+        <navGoUpper :to="to" :label="label"/>
         <BannerAtas/>
         <slot />
         <Footer/>
       </UContainer>
     </div>
   </template>
+<script setup>
+const props = defineProps(['to','label'])
+</script>

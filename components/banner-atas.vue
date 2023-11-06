@@ -6,7 +6,7 @@
         </div>
         <div v-show="dayjs().isBefore(dDay,'day')">{{ dayjs(dDay).fromNow() }}</div>
         <div v-show="dayjs().isSame(dDay,'day')" class="font-semibold">HARI INI</div>
-        <ULink to="/l/11-11/" :no-prefetch="true"
+        <ULink to="https://www.sadiskon.com/l/11-11/" :no-prefetch="true"
             class="text-center mx-2 px-4 py-1 bg-yellow-500 rounded-lg text-xs font-semibold animate-bounce">Kepoin</ULink>
     </div>
 </template>

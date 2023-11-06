@@ -9,16 +9,10 @@ const path = route.path
 const upperPaths = path.split('/').filter((p) => p !== '')
 upperPaths.pop()
 
-const upperPath = '/' + upperPaths.join('/') + '/'
+const upperPath = ref('/' + upperPaths.join('/') + '/')
 
-// /** inject google ads after 6seconds */
-// const showAd = ref(false)
-// onMounted(() => {
-//   setTimeout(() => {
-//     showAd.value = true
-//   }, 6000)
-// })
-
+const props = defineProps(['to','label'])
+upperPath.value = props.to?? upperPath.value
 </script>
 <template>
   <div>
@@ -31,20 +25,12 @@ const upperPath = '/' + upperPaths.join('/') + '/'
               stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
             </svg>
-            Kembali
+            {{ label?? 'Kembali' }}
           </NuxtLink>
         </div>
       </div>
     </div>
     <div class="block w-full h-12"></div>
-    <!-- iklan-->
-    <!-- <div
-      class="w-full max-w-lg py-1 mx-auto transition-all duration-300 ease-linear overflow-hidden flex flex-col items-center"
-      :class="showAd ? 'h-[90px]' : 'h-0'">
-      <div class="text-xs text-gray-500 mx-auto text-center">Advertisement</div>
-      <Adsbygoogle ad-format="Display" :ad-style="{ display: 'inline-block', width: '320px', height: '50px' }"
-        ad-slot="5726433030" />
-    </div> -->
-    <!-- end iklan -->
+
   </div>
 </template>
