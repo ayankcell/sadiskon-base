@@ -20,7 +20,7 @@ export default defineNuxtConfig({
         lang: 'id'
       },
       link: [
-        { rel: "manifest", href: "/sds-manifest.json" },
+        { rel: "manifest", href: "https://www.sadiskon.com/sds-manifest.json" },
         { rel: 'preconnect', href: 'https://i0.wp.com' },
         { rel: 'preconnect', href: 'https://i1.wp.com' },
         { rel: 'preconnect', href: 'https://i2.wp.com' },
