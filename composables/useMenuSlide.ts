@@ -7,7 +7,8 @@ const menuLinks = [
     { label: 'Kategori Promo', to: 'https://www.sadiskon.com/semua-kategori/' },
     { label: 'Baca Artikel', to: 'https://www.sadiskon.com/blog/' },
     { label: 'Gabung Komunitas', to: 'https://www.sadiskon.com/biolink/' },
-    { label: 'Tentang Sadiskon', to: 'https://www.sadiskon.com/p/tentang-sadiskon/' }
+    { label: 'Tentang Sadiskon', to: 'https://www.sadiskon.com/p/tentang-sadiskon/' },
+    { label: 'Kebijakan Privasi', to: 'https://www.sadiskon.com/p/kebijakan-privasi/' }
 ]
 
 export default () => {
