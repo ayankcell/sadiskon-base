@@ -30,9 +30,7 @@ export default defineNuxtConfig({
       ],
       style: [
         {
-          innerHTML: `html {
-          scroll-behavior: smooth;
-        }`}
+          innerHTML: `html { scroll-behavior: smooth;}`}
       ]
     }
   },
