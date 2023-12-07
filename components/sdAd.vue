@@ -56,12 +56,20 @@ const adSlots = () => {
 const outOfPageSlot = () => {
     googletag.defineOutOfPageSlot(`/138734930/${props.unit}`, props.id).addService(googletag.pubads())
 }
+
+const refreshAd = () => {
+    googletag.cmd.push(() => {
+        googletag.pubads().refresh()
+    })
+}
 /** reset the init every route changed*/
 
 const route = useRoute()
 watchEffect(() => {
     if (route.fullPath) {
-        isLoaded.value = false
+        if (googletag) {
+            refreshAd()
+        }
     }
 })
 /** configuring dan displaying ads */
@@ -82,19 +90,19 @@ onMounted(() => {
         // set loaded state
         isLoaded.value = true
     }
-
-    // display Ad
+    // display Adhttps://www.sadiskon.com/
     displayAd()
 })
 
-onMounted(() => {
-    /** destroy semua slot yang ada 
-         * pastiin gak dobel slot
-        */
-    googletag.cmd.push(() => {
-        googletag.destroySlots()
-    })
-})
+// onMounted(() => {
+//     /** destroy semua slot yang ada 
+//          * pastiin gak dobel slot
+//         */
+//     // googletag.cmd.push(() => {
+//         // googletag.pubads().clear()
+//         googletag.destroySlots()
+//     // })
+// })
 
 
 </script>
