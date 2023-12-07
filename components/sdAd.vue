@@ -1,8 +1,9 @@
 <template>
-    <div class="w-full">
-        <span class="block text-center text-xs py-2 text-gray-500" v-if="showLabel">Advertisement</span>
-        <div :id="id" :class="`w-full h-[${maxAdH}px] flex justify-center items-center`">
+    <div class="block">
+        <span class="block text-center text-xs py-1 text-gray-500" v-if="showLabel">Advertisement</span>
+        <div :id="id" class="flex justify-center items-center" :style="`min-height: ${maxAdH}px`">
         </div>
+        <span class="block text-center text-xs py-1 text-white bg-red-400" v-if="scrollMessage">Scoll untuk lanjut membaca</span>
     </div>
 </template>
 <script setup>
@@ -19,7 +20,8 @@ const props = defineProps({
     slotType: {
         default: 'normal'
     },
-    showLabel: { default: false }
+    showLabel: { default: false },
+    scrollMessage:{default:false}
 })
 /** get the tallest ad as container height */
 const sizes = props.size.map(size => size[1])
