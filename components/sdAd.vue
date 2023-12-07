@@ -1,7 +1,7 @@
 <template>
     <div class="w-full">
         <span class="block text-center text-xs py-2 text-gray-500" v-if="showLabel">Advertisement</span>
-        <div :id="id" :class="`w-full h-[${maxAdH}px]`">
+        <div :id="id" :class="`w-full h-[${maxAdH}px] flex justify-center items-center`">
         </div>
     </div>
 </template>
