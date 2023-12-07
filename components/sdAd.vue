@@ -3,7 +3,8 @@
         <span class="block text-center text-xs py-1 text-gray-500" v-if="showLabel">Advertisement</span>
         <div :id="id" class="flex justify-center items-center" :style="`min-height: ${maxAdH}px`">
         </div>
-        <span class="block text-center text-xs py-1 text-white bg-red-400" v-if="scrollMessage">Scoll untuk lanjut membaca</span>
+        <span class="block text-center text-xs py-1 text-white bg-red-400" v-if="scrollMessage">Scoll untuk lanjut
+            membaca</span>
     </div>
 </template>
 <script setup>
@@ -21,7 +22,7 @@ const props = defineProps({
         default: 'normal'
     },
     showLabel: { default: false },
-    scrollMessage:{default:false}
+    scrollMessage: { default: false }
 })
 /** get the tallest ad as container height */
 const sizes = props.size.map(size => size[1])
@@ -80,19 +81,20 @@ onMounted(() => {
 
         // set loaded state
         isLoaded.value = true
-
-        /** destroy semua slot yang ada 
-         * pastiin gak dobel slot
-        */
-        googletag.cmd.push(() => {
-            googletag.destroySlots()
-        })
     }
 
     // display Ad
     displayAd()
 })
 
+onMounted(() => {
+    /** destroy semua slot yang ada 
+         * pastiin gak dobel slot
+        */
+    googletag.cmd.push(() => {
+        googletag.destroySlots()
+    })
+})
 
 
 </script>
