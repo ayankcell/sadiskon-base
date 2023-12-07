@@ -65,12 +65,17 @@ const refreshAd = () => {
 /** reset the init every route changed*/
 
 const route = useRoute()
-watchEffect(() => {
-    if (route.fullPath) {
-        if (googletag) {
-            refreshAd()
-        }
-    }
+// watchEffect(() => {
+//     if (route.fullPath && isLoaded.value) {
+//         refreshAd()
+
+//     }
+// })
+
+onBeforeUnmount(() => {
+    googletag.cmd.push(() => {
+        googletag.destroySlots()
+    })
 })
 /** configuring dan displaying ads */
 onMounted(() => {
@@ -93,16 +98,5 @@ onMounted(() => {
     // display Adhttps://www.sadiskon.com/
     displayAd()
 })
-
-// onMounted(() => {
-//     /** destroy semua slot yang ada 
-//          * pastiin gak dobel slot
-//         */
-//     // googletag.cmd.push(() => {
-//         // googletag.pubads().clear()
-//         googletag.destroySlots()
-//     // })
-// })
-
 
 </script>
