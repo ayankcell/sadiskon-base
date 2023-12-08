@@ -1,9 +1,8 @@
 <template>
-    <div class="block">
-        <span class="block text-center text-xs py-1 text-gray-500" v-if="showLabel">Advertisement</span>
-        <div :id="id" class="flex justify-center items-center" :style="`min-height: ${maxAdH}px`">
+    <div class="">
+        <div :id="id" class="flex justify-center items-center" style="min-height: 300px">
         </div>
-        <span class="block text-center text-xs py-1 text-white bg-red-400" v-if="scrollMessage">Scoll untuk lanjut
+        <span class="block text-center text-xs py-1 text-white bg-slate-400" v-if="scrollMessage">Iklan - Scoll untuk lanjut
             membaca</span>
     </div>
 </template>
@@ -25,10 +24,10 @@ const props = defineProps({
     scrollMessage: { default: false }
 })
 /** get the tallest ad as container height */
-const sizes = props.size.map(size => size[1])
-sizes.sort((a, b) => { return a - b })
+// const sizes = props.size.map(size => size[1])
+// sizes.sort((a, b) => { return a - b })
 
-const maxAdH = sizes[1]
+// const maxAdH = sizes[1]
 /** initialization */
 const { isLoaded, gptScript } = useSdAd()
 
