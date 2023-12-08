@@ -21,7 +21,6 @@ const props = defineProps({
         default: 'normal'
     },
     showLabel: { default: false },
-    scrollMessage: { default: false }
 })
 /** get the tallest ad as container height */
 // const sizes = props.size.map(size => size[1])
