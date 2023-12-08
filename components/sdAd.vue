@@ -2,7 +2,7 @@
     <div class="">
         <div :id="id" class="flex justify-center items-center" style="min-height: 300px">
         </div>
-        <span class="block text-center text-xs py-1 text-white bg-slate-400" v-if="scrollMessage">Iklan - Scoll untuk lanjut
+        <span class="block text-center text-xs py-1 text-white bg-slate-400" v-if="showLabel">Iklan - Scoll untuk lanjut
             membaca</span>
     </div>
 </template>
