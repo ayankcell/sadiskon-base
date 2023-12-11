@@ -8,7 +8,8 @@ const menuLinks = [
     { label: 'Baca Artikel', to: 'https://www.sadiskon.com/blog/' },
     { label: 'Gabung Komunitas', to: 'https://www.sadiskon.com/biolink/' },
     { label: 'Tentang Sadiskon', to: 'https://www.sadiskon.com/p/tentang-sadiskon/' },
-    { label: 'Kebijakan Privasi', to: 'https://www.sadiskon.com/p/kebijakan-privasi/' }
+    { label: 'Kebijakan Privasi', to: 'https://www.sadiskon.com/p/kebijakan-privasi/' },
+    { label: 'Kerja Sama', to: 'https://www.sadiskon.com/p/kerja-sama/'}
 ]
 
 export default () => {
