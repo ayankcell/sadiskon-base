@@ -10,7 +10,7 @@ const errorTitle = {
 }
 
 const errorPage = {
-    404: { headline: 'Waduh! Halaman Gak Temukan', messages:[
+    404: { headline: 'Waduh! Halaman Gak Ditemukan', messages:[
         {text: 'Mungkin kamu tersesat, atau promo sudah dihapus.' },
         {text: 'Tenang, masih ada banyak promo lainnya kok!'}
     ]},
