@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-gray-300">
-        <div :id="id" class="flex justify-center items-center" style="min-height: 300px">
+    <div class="bg-gray-200">
+        <span class="block text-center text-xs py-1 text-white bg-slate-400" v-if="label && labelTop">{{ label }}</span>
+        <div :id="id" class="flex justify-center items-center transition-all duration-300" :style="height ? 'min-height: '+height+'px' : ''">
         </div>
-        <span class="block text-center text-xs py-1 text-white bg-slate-500" v-if="showLabel">Iklan - Scoll untuk lanjut
-            membaca</span>
+        <span class="block text-center text-xs py-1 text-white bg-slate-400" v-if="label && !labelTop">{{ label }}</span>
     </div>
 </template>
 <script setup>
@@ -20,13 +20,11 @@ const props = defineProps({
     slotType: {
         default: 'normal'
     },
-    showLabel: { default: false },
+    height: {},
+    label: {},
+    labelTop:{default: false}
 })
-/** get the tallest ad as container height */
-// const sizes = props.size.map(size => size[1])
-// sizes.sort((a, b) => { return a - b })
 
-// const maxAdH = sizes[1]
 /** initialization */
 const { isLoaded, gptScript } = useSdAd()
 
@@ -63,12 +61,7 @@ const refreshAd = () => {
 /** reset the init every route changed*/
 
 const route = useRoute()
-// watchEffect(() => {
-//     if (route.fullPath && isLoaded.value) {
-//         refreshAd()
 
-//     }
-// })
 
 onBeforeUnmount(() => {
     googletag.cmd.push(() => {
