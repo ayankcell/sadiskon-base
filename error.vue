@@ -16,7 +16,7 @@ const errorPage = {
     ]},
     500: { headline: 'Duh! Maaf Lagi Ada Masalah Nih', messages:[
         {text: 'Sistem Sadiskon lagi ada gangguan teknis.'},
-        {text: 'Kamu boleh coba refresh halaman ini setelah beberapa menit, atau coba klik tombil "Balik" di bawah ini'}
+        {text: 'Kamu boleh coba refresh halaman ini setelah beberapa menit, atau coba klik tombol "Balik" di bawah ini'}
     ]}
 }
 
