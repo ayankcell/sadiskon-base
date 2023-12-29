@@ -37,6 +37,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       sdsDomain: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.sadiskon.com',
+      trailingSlash: true
     }
   },
   //@ts-ignore
