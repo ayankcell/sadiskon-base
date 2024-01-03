@@ -11,7 +11,7 @@ export function getImage(src, { modifiers, baseURL } = {}, { options, $img }) {
     /** hapus  protocolnya */
     src = withoutProtocol(src)
   }
-  /** set base URL random URL from ix.wp.com */
+  /** set base URL  */
   baseURL = 'https://wsrv.nl?url='
 
   return {

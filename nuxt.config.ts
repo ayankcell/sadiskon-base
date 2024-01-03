@@ -10,10 +10,10 @@ export default defineNuxtConfig({
     trailingSlash: true,
     defaultLocale: 'id_ID.utf8'
   },
-  css:[
+  css: [
     join(currentDir, './assets/css/tailwind.css')
   ],
-  
+
   app: {
     head: {
       htmlAttrs: {
@@ -30,7 +30,8 @@ export default defineNuxtConfig({
       ],
       style: [
         {
-          innerHTML: `html { scroll-behavior: smooth;}`}
+          innerHTML: `html { scroll-behavior: smooth;}`
+        }
       ]
     }
   },
@@ -74,12 +75,19 @@ export default defineNuxtConfig({
   },
   image: {
     providers: {
-      customProvider: {
+      photon: {
         name: 'photon',
-        options:{
-          baseDomain:'sadiskon.com',
+        options: {
+          baseDomain: 'sadiskon.com',
         },
         provider: join(currentDir, './providers/photon')
+      },
+      weserve: {
+        name: 'weserve',
+        options: {
+          baseDomain: 'sadiskon.com'
+        },
+        provider: join(currentDir, './providers/weserve')
       }
     }
   },
