@@ -24,6 +24,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://i0.wp.com' },
         { rel: 'preconnect', href: 'https://i1.wp.com' },
         { rel: 'preconnect', href: 'https://i2.wp.com' },
+        { rel: 'preconnect', href: 'https://weserve.nl' },
       ],
       script: [
         { type: 'application/ld+json', innerHTML: `{"@context": "https://schema.org","@type": "Organization","url": "https://www.sadiskon.com","logo": "https://www.sadiskon.com/img/pwa/sadiskon-icon-pwa-512.png"}` }
