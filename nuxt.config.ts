@@ -92,7 +92,6 @@ export default defineNuxtConfig({
       }
     }
   },
-
   dayjs: {
     locales: ['id'],
     plugins: ['relativeTime', 'utc', 'timezone'],
