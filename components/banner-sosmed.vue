@@ -3,6 +3,6 @@
         <div>
             Gabung <span class="font-semibold">Komunitas Hemat</span> di Sosial Media
         </div>
-        <UButton type="link" to="/biolink/" color="orange" size="xs">Ayo!</UButton>
+        <UButton type="link" to="https://www.sadiskon.com/biolink/" color="orange" size="xs">Ayo!</UButton>
     </div>
 </template>
