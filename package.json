@@ -15,7 +15,7 @@
     "@types/node": "^18.18.4",
     "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
     "dayjs-nuxt": "^1.2.7",
-    "nuxt": "^3.7.4",
+    "nuxt": "^3.9.3",
     "nuxt-delay-hydration": "^1.2.2",
     "nuxt-schema-org": "^3.0.1",
     "nuxt-simple-sitemap": "^3.4.0"
