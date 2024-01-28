@@ -12,13 +12,13 @@
     "@nuxt/devtools": "latest",
     "@nuxt/image": "1.0.0-rc.1",
     "@nuxt/ui": "^2.9.0",
+    "@nuxtjs/sitemap": "^5.0.5",
     "@types/node": "^18.18.4",
     "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
     "dayjs-nuxt": "^1.2.7",
     "nuxt": "^3.9.3",
     "nuxt-delay-hydration": "^1.2.2",
-    "nuxt-schema-org": "^3.0.1",
-    "nuxt-simple-sitemap": "^3.4.0"
+    "nuxt-schema-org": "^3.0.1"
   },
   "dependencies": {
     "@iconify-json/bxl": "^1.1.7",

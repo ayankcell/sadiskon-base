@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-schema-org',
     'dayjs-nuxt',
-    'nuxt-simple-sitemap',
+    '@nuxtjs/sitemap',
     'nuxt-delay-hydration',
     '@zadigetvoltaire/nuxt-gtm',
   ],
