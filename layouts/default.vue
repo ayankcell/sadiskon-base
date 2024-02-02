@@ -5,7 +5,7 @@
       base: 'bg-gray-100 mx-auto shadow-2xl',
       padding: 'px-0 sm:px-0 lg:px-0',
     }">
-    <SdAd unit="top_sitewide" :size="['fluid']" id="div-gpt-ad-1705790436404-0" />
+    <SdAd unit="top_sitewide" :size="[[320,50],[468,60]]" id="div-gpt-ad-1705790436404-0" />
       <slot />
       <Footer/>
       <!-- buttom navigation on root path -->
