@@ -43,19 +43,11 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-schema-org',
     'dayjs-nuxt',
-    '@nuxtjs/sitemap',
     'nuxt-delay-hydration',
     '@zadigetvoltaire/nuxt-gtm',
   ],
   ui: {
     icons: ['heroicons', 'bxl']
-  },
-  sitemap: {
-    sitemaps: true,
-    defaultSitemapsChunkSize: 1000,
-    exclude: [
-      '/amp/**'
-    ]
   },
   gtm: {
     id: 'GTM-NTG6WQ2',

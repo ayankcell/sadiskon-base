@@ -11,7 +11,6 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxt/image": "1.0.0-rc.1",
-    "@nuxtjs/sitemap": "^5.0.5",
     "@types/node": "^18.18.4",
     "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
     "dayjs-nuxt": "^1.2.7",
