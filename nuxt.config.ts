@@ -42,6 +42,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
     'nuxt-schema-org',
+    '@nuxt/ui',
     'dayjs-nuxt',
     'nuxt-delay-hydration',
     '@zadigetvoltaire/nuxt-gtm',
