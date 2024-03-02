@@ -88,5 +88,8 @@ export default defineNuxtConfig({
   },
   colorMode: {
     preference: 'light'
+  },
+  tailwindcss:{
+    cssPath: false
   }
 })
