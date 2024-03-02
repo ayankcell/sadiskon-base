@@ -21,9 +21,9 @@ export default defineNuxtConfig({
       },
       link: [
         { rel: "manifest", href: "https://www.sadiskon.com/sds-manifest.json" },
-        { rel: 'preconnect', href: 'https://i0.wp.com' },
-        { rel: 'preconnect', href: 'https://i1.wp.com' },
-        { rel: 'preconnect', href: 'https://i2.wp.com' },
+        { rel: 'dns-prefetch', href: 'https://i0.wp.com' },
+        { rel: 'dns-prefetch', href: 'https://i1.wp.com' },
+        { rel: 'dns-prefetch', href: 'https://i2.wp.com' },
       ],
       style: [
         {
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     'nuxt-schema-org',
     '@nuxt/ui',
     'dayjs-nuxt',
-    'nuxt-delay-hydration',
+    // 'nuxt-delay-hydration',
     '@zadigetvoltaire/nuxt-gtm',
   ],
   ui: {
@@ -55,13 +55,13 @@ export default defineNuxtConfig({
     defer: true,
     enableRouterSync: true
   },
-  delayHydration: {
-    mode: 'mount',
-    debug: process.env.NODE_ENV === 'development',
-    // replayClick: true,
-    //@ts-ignore
-    idleCallbackTimeout: { mobile: 2000, desktop: 1000 }
-  },
+  // delayHydration: {
+  //   mode: 'mount',
+  //   debug: process.env.NODE_ENV === 'development',
+  //   // replayClick: true,
+  //   //@ts-ignore
+  //   idleCallbackTimeout: { mobile: 2000, desktop: 1000 }
+  // },
   image: {
     providers: {
       photon: {

@@ -34,9 +34,6 @@ devDependencies:
   nuxt:
     specifier: ^3.9.3
     version: 3.9.3(@types/node@18.19.8)(vite@5.0.11)
-  nuxt-delay-hydration:
-    specifier: ^1.2.2
-    version: 1.3.3
   nuxt-schema-org:
     specifier: ^3.0.1
     version: 3.3.3(@nuxt/devtools@1.0.8)(@unhead/shared@1.8.10)(@vue/compiler-core@3.4.15)(nuxt@3.9.3)(postcss@8.4.33)(unhead@1.8.10)(vite@5.0.11)(vue@3.4.15)(webpack@5.89.0)
@@ -663,9 +660,6 @@ packages:
     resolution: {integrity: sha512-7nhBTRkTG0mD+7r7JvNalJz++YwszZk0oP1HIY6fCgz6wNKxT6LuiXCqdPrZmNPe/WbPIKuqxGZN5s+i6NZqow==}
     peerDependencies:
       vue: '>= 3.2.0 < 4.0.0'
-    peerDependenciesMeta:
-      vue-router:
-        optional: true
     dependencies:
       '@gtm-support/core': 2.2.0
       vue: 3.4.15
@@ -4613,10 +4607,6 @@ packages:
     dependencies:
       p-locate: 5.0.0
 
-  /lodash-es@4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: true
-
   /lodash._reinterpolate@3.0.0:
     resolution: {integrity: sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==}
 
@@ -5217,18 +5207,6 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /nuxt-delay-hydration@1.3.3:
-    resolution: {integrity: sha512-M0PR0s8M7ugUpq7hQbMZ4A5DpkIGoCeeXM5mSJyHHi4yx7M5zep2zNweA/M1rMN+RIE3O/PlxuWYzZK73GiVMA==}
-    dependencies:
-      '@nuxt/kit': 3.9.3
-      lodash-es: 4.17.21
-      packrup: 0.1.0
-      radix3: 1.1.0
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
   /nuxt-icon@0.6.8(nuxt@3.9.3)(vite@5.0.11)(vue@3.4.15):
     resolution: {integrity: sha512-6eWlNOb6Uvp63uXFdhcmsB1JlubDv76Pot/VwmIu0yJxDYhwytbnv3WAjw2khl2l7W/65V4eMGIEeX9C5Ahxng==}
     dependencies:
@@ -5553,10 +5531,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       aggregate-error: 3.1.0
-
-  /packrup@0.1.0:
-    resolution: {integrity: sha512-HnUl9ztHGty5ZK13WM8Q7854SWPKH/eCT+MiTO0P1qCu1Y4S5PPJ8E9MwD3cnjSr7PUPzXDnmOVJIKM043OfJQ==}
-    dev: true
 
   /pacote@17.0.6:
     resolution: {integrity: sha512-cJKrW21VRE8vVTRskJo78c/RCvwJCn1f4qgfxL4w77SOWrTCRcmfkYHlHtS0gqpgjv3zhXflRtgsrUCX5xwNnQ==}
