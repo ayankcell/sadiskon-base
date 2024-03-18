@@ -29,6 +29,9 @@ export default defineNuxtConfig({
         {
           innerHTML: `html { scroll-behavior: smooth;}`
         }
+      ],
+      meta: [
+        { name: "p:domain_verify", content: "45f8491e8f639a55241baa5c78be36e9" }
       ]
     }
   },
@@ -44,7 +47,6 @@ export default defineNuxtConfig({
     'nuxt-schema-org',
     '@nuxt/ui',
     'dayjs-nuxt',
-    // 'nuxt-delay-hydration',
     '@zadigetvoltaire/nuxt-gtm',
   ],
   ui: {
@@ -55,13 +57,6 @@ export default defineNuxtConfig({
     defer: true,
     enableRouterSync: true
   },
-  // delayHydration: {
-  //   mode: 'mount',
-  //   debug: process.env.NODE_ENV === 'development',
-  //   // replayClick: true,
-  //   //@ts-ignore
-  //   idleCallbackTimeout: { mobile: 2000, desktop: 1000 }
-  // },
   image: {
     providers: {
       photon: {
@@ -89,7 +84,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light'
   },
-  tailwindcss:{
+  tailwindcss: {
     cssPath: false
   }
 })
