@@ -46,7 +46,7 @@ const canonicalGen = (route: Object) => {
 const { menuIsOpen } = useMenuSlide()
 const menuFooter = [
     { label: 'Home', icon: 'i-heroicons-home', to: '/' },
-    { label: 'Sadis', icon: 'i-heroicons-fire', to: '/l/sadis/' },
+    { label: 'Hot 7.7', icon: 'i-heroicons-fire', to: '/l/7-7/' },
     { label: 'Brand', icon: 'i-heroicons-building-storefront', to: '/semua-brand/' },
     {label: 'Artikel', icon: 'i-heroicons-newspaper', to:'https://www.sadiskon.com/blog/'},
     { label: 'Menu', icon: 'i-heroicons-list-bullet', action: () => { menuIsOpen.value = !menuIsOpen.value } },
