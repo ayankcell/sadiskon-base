@@ -6,7 +6,7 @@ const handleError = () => clearError({ redirect: '/' })
 const errorTitle = {
     //@ts-ignore
     404: `Waduh! Halaman gak ditemukan: ${props.error?.url} | Sadiskon`,
-    500: 'Duh maaf ya! Lagi ada gangguan di server Sadikon'
+    500: `Gangguan Server Nih: ${props.error?.url}`
 }
 
 const errorPage = {
