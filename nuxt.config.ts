@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     trailingSlash: true,
     defaultLocale: 'id_ID.utf8'
   },
+
   css: [
     join(currentDir, './assets/css/tailwind.css')
   ],
@@ -35,12 +36,14 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   runtimeConfig: {
     public: {
       sdsDomain: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.sadiskon.com',
       trailingSlash: true
     }
   },
+
   //@ts-ignore
   modules: [
     '@nuxt/image',
@@ -49,14 +52,17 @@ export default defineNuxtConfig({
     'dayjs-nuxt',
     '@zadigetvoltaire/nuxt-gtm',
   ],
+
   ui: {
     icons: ['heroicons', 'bxl']
   },
+
   gtm: {
     id: 'GTM-NTG6WQ2',
     defer: true,
     enableRouterSync: true
   },
+
   image: {
     providers: {
       photon: {
@@ -75,16 +81,21 @@ export default defineNuxtConfig({
       }
     }
   },
+
   dayjs: {
     locales: ['id'],
     plugins: ['relativeTime', 'utc', 'timezone'],
     defaultLocale: 'id',
     defaultTimezone: 'Asia/Jakarta',
   },
+
   colorMode: {
     preference: 'light'
   },
+
   tailwindcss: {
     cssPath: false
-  }
+  },
+
+  compatibilityDate: '2024-08-28'
 })

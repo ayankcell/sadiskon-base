@@ -2,6 +2,7 @@
   <div>
     <NuxtLoadingIndicator />
     <NuxtPage />
+    
     <UNotifications />
     <MenuSlide />
   </div>

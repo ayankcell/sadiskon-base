@@ -59,4 +59,5 @@
 <script setup>
 const { menuIsOpen, menuLinks } = useMenuSlide()
 const links = menuLinks
+
 </script>
