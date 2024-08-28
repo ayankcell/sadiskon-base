@@ -13,8 +13,8 @@
       <div class="fixed bottom-0 left-0 w-full z-20">
         <div class="max-w-lg mx-auto bg-white flex text-gray-700 shadow-md">
           <ULink active-class="text-red-700" :to="menu.to" class="py-1 flex flex-1 flex-col justify-center items-center"
-            :class="menu.animation ?? ''" v-for="menu of menus" :key="menu.label"
-            @click="menu.action ? menuIsOpen = !menuIsOpen : ''">
+            :class="menu.animation ?? ''" v-for="menu of data?.menuFooter?.links" :key="menu.label"
+            @click="menu.action ? (menuIsOpen = !menuIsOpen) : '' ">
             <UIcon :name="menu.icon" />
             <span class="text-xs">{{ menu.label }}</span>
           </ULink>
@@ -24,11 +24,26 @@
   </div>
 </template>
 
-<script setup>
-const { menuFooter } = useSds()
+<script setup lang="ts">
+// const { menuFooter } = useSds()
 const { menuIsOpen } = useMenuSlide()
 
-const menus = menuFooter
+interface FooterLink {
+    label: string;
+    icon: string;
+    to: string;
+    animation: boolean;
+    action: boolean;
+  }
+  
+  interface MenuFooter {
+    lastUpdated: string;
+    links: FooterLink[];
+  }
+  
+  interface ApiResponse {
+    menuFooter: MenuFooter;
+  }
+const { data } = await useFetch<ApiResponse>('https://sds-jsons.pages.dev/menu-footer.json')
 
-// console.log(menuFooter)
 </script>

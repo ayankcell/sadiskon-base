@@ -43,40 +43,17 @@ const canonicalGen = (route: Object) => {
 }
 
 /** menu Footer  */
-const { menuIsOpen } = useMenuSlide()
-// const menuFooter = [
-//     { label: 'Home', icon: 'i-heroicons-home', to: '/' },
-//     { label: 'Voucher', icon: 'i-heroicons-ticket', to: '/l/terbukti/' },
-//     { label: 'Brand', icon: 'i-heroicons-building-storefront', to: '/semua-brand/' },
-//     {label: 'Artikel', icon: 'i-heroicons-newspaper', to:'https://www.sadiskon.com/blog/'},
-//     { label: 'Menu', icon: 'i-heroicons-list-bullet', action: () => { menuIsOpen.value = !menuIsOpen.value } },
-// ]
 
-interface FooterLink {
-    label: string;
-    icon: string;
-    to: string;
-  }
-  
-  interface MenuFooter {
-    lastUpdated: string;
-    links: FooterLink[];
-  }
-  
-  interface ApiResponse {
-    menuFooter: MenuFooter;
-  }
 
-const menu = await $fetch<ApiResponse>('https://sds-jsons.pages.dev/menu-footer.json')
+// const menu = await $fetch<ApiResponse>('https://sds-jsons.pages.dev/menu-footer.json')
 
-const menuFooter = menu?.menuFooter?.links
+// const menuFooter = menu?.menuFooter?.links
 
 export default function () {
     return {
         placeHolder,
         stripTags,
         couponSVG,
-        canonicalGen,
-        menuFooter
+        canonicalGen
     }
 }
