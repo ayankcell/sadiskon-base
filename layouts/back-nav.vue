@@ -7,7 +7,6 @@
     }">
       <!-- navigasi balik satu path ke atasnya -->
       <navGoUpper :to="to" :label="label" />
-      <SdAd unit="top_sitewide" :size="[[320,50],[468,60]]" id="div-gpt-ad-1705790436404-0" />
       <slot />
       <Footer />
       <!-- buttom navigation on root path -->
