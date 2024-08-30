@@ -35,5 +35,4 @@ const dDay = data.value?.banner?.dateStart
 const expired = data.value?.banner?.dateExpired
 const dayjs = useDayjs()
 const terlewat = dayjs().isAfter(expired ?? dDay, 'day')
-console.log(terlewat)
 </script>
