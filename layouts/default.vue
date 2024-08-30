@@ -5,6 +5,7 @@
       base: 'bg-gray-100 mx-auto shadow-2xl',
       padding: 'px-0 sm:px-0 lg:px-0',
     }">
+    <BannerAtas/>
       <slot />
       <Footer />
       <!-- buttom navigation on root path -->
@@ -24,7 +25,6 @@
 </template>
 
 <script setup lang="ts">
-// const { menuFooter } = useSds()
 const { menuIsOpen } = useMenuSlide()
 
 interface FooterLink {

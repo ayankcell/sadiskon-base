@@ -42,12 +42,7 @@ const canonicalGen = (route: Object) => {
     return route.path.endsWith("/") ? route.path : route.path + "/";
 }
 
-/** menu Footer  */
 
-
-// const menu = await $fetch<ApiResponse>('https://sds-jsons.pages.dev/menu-footer.json')
-
-// const menuFooter = menu?.menuFooter?.links
 
 export default function () {
     return {
