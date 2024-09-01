@@ -54,7 +54,12 @@ export default defineNuxtConfig({
   ],
 
   ui: {
-    icons: ['heroicons', 'bxl']
+    icons: ['heroicons', 'bxl'],
+  },
+  icon:{
+    serverBundle:{
+      collections: ['heroicons']
+    }
   },
 
   gtm: {

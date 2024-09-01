@@ -5,8 +5,8 @@
         <div class="p-4 text-center" v-if="!data.banner.isImage">
             <div class="text-lg font-semibold">{{ data.banner?.headline }}
                 <span v-show="dayjs().isBefore(dDay, 'day')">{{ dayjs(dDay).fromNow(true) }} lagi</span>
-                <span v-show="dayjs().isSame(dDay, 'day')" class="font-semibold">HARI INI</span>
-                <span v-show="dayjs().isBefore(expired, 'day')" class="font-semibold"> sisa {{ dayjs(expired).fromNow(true) }} lagi</span>
+                <span v-show="dayjs().isSame(dDay, 'day')" class="font-semibold">sisa {{ dayjs(expired).fromNow(true) }} lagi</span>
+                <!-- <span v-show="dayjs().isBefore(expired, 'day')" class="font-semibold"> sisa {{ dayjs(expired).fromNow(true) }} lagi</span> -->
             </div>
             <p class="text-sm">
                 {{ data.banner?.content }}
@@ -22,7 +22,7 @@
             <div class="text-center bg-red-500 py-1">
                 <span v-show=" dayjs().isBefore(dDay, 'day') " class="animate-ping">{{ dayjs(dDay).fromNow(true) }}
                     lagi</span>
-                <span v-show=" dayjs().isSame(dDay, 'day') " class="font-semibold">HARI INI</span>
+                <span v-show=" dayjs().isSame(dDay, 'day') " class="font-semibold">sisa {{ dayjs(expired).fromNow(true) }} lagi</span>
             </div>
         </NuxtLink>
     </div>
