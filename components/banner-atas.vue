@@ -17,8 +17,8 @@
             </UButton>
         </div>
         <!--image-->
-        <NuxtLink :to=" data.banner.link " :title=" data.banner?.title ?? '' " v-else>
-            <NuxtImg :src=" data?.banner?.imageUrl " :alt=" data?.banner?.title ?? '' " class="w-full object-cover" />
+        <NuxtLink :to=" data.banner.link " :title=" data.banner?.headline ?? '' " v-else>
+            <NuxtImg :src=" data?.banner?.imageUrl " :alt=" data?.banner?.headline ?? '' " class="w-full object-cover" />
             <div class="text-center bg-red-500 py-1">
                 <span v-show=" dayjs().isBefore(dDay, 'day') " class="animate-ping">{{ dayjs(dDay).fromNow(true) }}
                     lagi</span>
