@@ -5,7 +5,7 @@
                 class="py-1 flex flex-1 flex-col justify-center items-center" :class="menu.animation ?? ''"
                 v-for="menu of data?.menuFooter?.links" :key="menu.label"
                 @click="menu.action ? (menuIsOpen = !menuIsOpen) : ''" external>
-                <NuxtImg :src="`${jsonHost}/icons/${menu.icon}`" class="w-5 h-5 opacity-70" />
+                <img :src="`${jsonHost}/icons/${menu.icon}`" class="w-5 h-5 opacity-70" />
                 <span class="text-xs">{{ menu.label }}</span>
             </ULink>
         </div>

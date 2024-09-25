@@ -22,9 +22,9 @@ export default defineNuxtConfig({
       },
       link: [
         { rel: "manifest", href: "https://www.sadiskon.com/sds-manifest.json" },
-        { rel: 'dns-prefetch', href: 'https://i0.wp.com' },
-        { rel: 'dns-prefetch', href: 'https://i1.wp.com' },
-        { rel: 'dns-prefetch', href: 'https://i2.wp.com' },
+        // { rel: 'dns-prefetch', href: 'https://i0.wp.com' },
+        // { rel: 'dns-prefetch', href: 'https://i1.wp.com' },
+        // { rel: 'dns-prefetch', href: 'https://i2.wp.com' },
       ],
       style: [
         {
